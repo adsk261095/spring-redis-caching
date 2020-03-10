@@ -13,7 +13,6 @@ public class Student implements Serializable {
     @Id
     @SequenceGenerator(name = "SEQ_GEN", sequenceName = "SEQ_USER", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_GEN")
-
     private int id;
     private String name;
     private long followers;
