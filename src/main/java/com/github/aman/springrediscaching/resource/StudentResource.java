@@ -44,12 +44,4 @@ public class StudentResource {
         logger.info("deleting student with id {}", id);
         studentRepository.deleteById(id);
     }
-    /*
-    @Cacheable(value = "student", key="#id", unless = "#result.followers < 0")
-    @GetMapping(value = "/getStudentById/{id}")
-    public Optional<Student> getStudent(@PathVariable String id){
-        logger.info("Getting student with is: " + id);
-        return studentRepository.findById(Integer.parseInt(id));
-    }
-     */
 }
