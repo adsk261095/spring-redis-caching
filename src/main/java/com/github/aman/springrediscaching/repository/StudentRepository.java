@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface StudentRepository extends CrudRepository<Student, Integer> {
-    default public void show(){
+    default void show(){
         System.out.println("from studentRepository");
     }
 }
